@@ -19,23 +19,8 @@
         .form-control { background-color: var(--input-bg); border: 1px solid #444; color: white !important; border-radius: 10px; padding: 12px; }
         .form-control:focus { background-color: #333; border-color: var(--primary-green); box-shadow: none; }
         .btn-success-custom { background-color: var(--primary-green); border: none; border-radius: 10px; padding: 12px 20px; font-weight: bold; color: white; }
-        .contact-btn { 
-            width: 45px; 
-            height: 45px; 
-            border-radius: 50%; 
-            display: inline-flex;
-            align-items: center; 
-            justify-content: center; 
-            font-size: 1.2rem; 
-            text-decoration: none; 
-            color: white;
-            margin: 0 5px;
-            transition: all 0.3s ease;
-        }
-        .contact-btn:hover {
-            transform: scale(1.1);
-            color: white;
-        }
+        .contact-btn { width: 45px; height: 45px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.2rem; text-decoration: none; color: white; margin: 0 5px; transition: all 0.3s ease; }
+        .contact-btn:hover { transform: scale(1.1); color: white; }
         .btn-whatsapp { background-color: #25D366; }
         .btn-call { background-color: #007bff; }
         .btn-complete { background-color: #ff8f00; }
@@ -54,115 +39,31 @@
         .loading-overlay { position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:2000; display:flex; justify-content:center; align-items:center; }
         .req-badge { background-color: #ff9800; color: #000; padding: 2px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: bold; margin-right: 8px; }
         
-        .custom-card.expired {
-            background-color: var(--expired-bg) !important;
-            border: 2px solid var(--expired-border) !important;
-            opacity: 0.85;
-        }
-        .custom-card.expired .route-display {
-            color: #ff6b6b !important;
-        }
-        .custom-card.expired .route-label {
-            color: #ff9999 !important;
-        }
-        .custom-card.expired .time-badge {
-            background-color: rgba(139, 0, 0, 0.3) !important;
-            color: #ff6b6b !important;
-        }
-        .custom-card.expired .expired-label {
-            color: #ff4444 !important;
-            font-weight: bold;
-            background-color: rgba(255, 0, 0, 0.15);
-            padding: 2px 12px;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            border: 1px solid #ff4444;
-            margin-right: 8px;
-        }
-        .custom-card.expired .contact-btn {
-            opacity: 0.5;
-            pointer-events: none;
-            cursor: not-allowed;
-        }
+        .custom-card.expired { background-color: var(--expired-bg) !important; border: 2px solid var(--expired-border) !important; opacity: 0.85; }
+        .custom-card.expired .route-display { color: #ff6b6b !important; }
+        .custom-card.expired .route-label { color: #ff9999 !important; }
+        .custom-card.expired .time-badge { background-color: rgba(139, 0, 0, 0.3) !important; color: #ff6b6b !important; }
+        .custom-card.expired .expired-label { color: #ff4444 !important; font-weight: bold; background-color: rgba(255, 0, 0, 0.15); padding: 2px 12px; border-radius: 20px; font-size: 0.7rem; border: 1px solid #ff4444; margin-right: 8px; }
+        .custom-card.expired .contact-btn { opacity: 0.5; pointer-events: none; cursor: not-allowed; }
 
-        .custom-card.completed {
-            background-color: var(--completed-bg) !important;
-            border: 2px solid var(--completed-border) !important;
-        }
-        .custom-card.completed .route-display {
-            color: #ffb74d !important;
-        }
-        .custom-card.completed .route-label {
-            color: #ffcc80 !important;
-        }
-        .custom-card.completed .time-badge {
-            background-color: rgba(184, 90, 0, 0.3) !important;
-            color: #ffb74d !important;
-        }
-        .custom-card.completed .completed-label {
-            color: #ffb74d !important;
-            font-weight: bold;
-            background-color: rgba(255, 143, 0, 0.15);
-            padding: 2px 12px;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            border: 1px solid #ff8f00;
-            margin-right: 8px;
-        }
-        .custom-card.completed .contact-btn {
-            opacity: 0.5;
-            pointer-events: none;
-            cursor: not-allowed;
-        }
-        .custom-card.completed .btn-complete {
-            opacity: 0.5;
-            pointer-events: none;
-            cursor: not-allowed;
-        }
+        .custom-card.completed { background-color: var(--completed-bg) !important; border: 2px solid var(--completed-border) !important; }
+        .custom-card.completed .route-display { color: #ffb74d !important; }
+        .custom-card.completed .route-label { color: #ffcc80 !important; }
+        .custom-card.completed .time-badge { background-color: rgba(184, 90, 0, 0.3) !important; color: #ffb74d !important; }
+        .custom-card.completed .completed-label { color: #ffb74d !important; font-weight: bold; background-color: rgba(255, 143, 0, 0.15); padding: 2px 12px; border-radius: 20px; font-size: 0.7rem; border: 1px solid #ff8f00; margin-right: 8px; }
+        .custom-card.completed .contact-btn { opacity: 0.5; pointer-events: none; cursor: not-allowed; }
+        .custom-card.completed .btn-complete { opacity: 0.5; pointer-events: none; cursor: not-allowed; }
         
-        .contact-buttons-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-        .contact-buttons-container .contact-btn {
-            width: 40px;
-            height: 40px;
-            font-size: 1rem;
-        }
+        .contact-buttons-container { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.05); }
+        .contact-buttons-container .contact-btn { width: 40px; height: 40px; font-size: 1rem; }
         
-        /* Countdown timer style */
-        .delete-timer {
-            color: #ff6b6b;
-            font-size: 0.7rem;
-            margin-top: 4px;
-            display: block;
-        }
-
-        /* Section headers */
-        .section-header {
-            color: #81c784;
-            font-size: 1.1rem;
-            font-weight: bold;
-            padding: 10px 0;
-            border-bottom: 2px solid #2E7D32;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .section-header .badge {
-            font-size: 0.8rem;
-        }
-        .section-divider {
-            margin: 20px 0;
-            border: 0;
-            border-top: 2px dashed #333;
-        }
+        .delete-timer { color: #ff6b6b; font-size: 0.7rem; margin-top: 4px; display: block; }
+        .section-header { color: #81c784; font-size: 1.1rem; font-weight: bold; padding: 10px 0; border-bottom: 2px solid #2E7D32; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; }
+        .section-header .badge { font-size: 0.8rem; }
+        .section-divider { margin: 20px 0; border: 0; border-top: 2px dashed #333; }
+        .date-badge { background-color: rgba(46, 125, 50, 0.15); color: #81c784; padding: 2px 10px; border-radius: 6px; font-size: 0.7rem; margin-right: 6px; }
+        .expired .date-badge { color: #ff6b6b !important; background-color: rgba(139, 0, 0, 0.2) !important; }
+        .completed .date-badge { color: #ffb74d !important; background-color: rgba(184, 90, 0, 0.2) !important; }
     </style>
 </head>
 <body>
@@ -178,7 +79,6 @@
     </div>
 
     <div class="container">
-        <!-- AUTH SECTION -->
         <div id="authSection">
             <div class="custom-card p-4">
                 <ul class="nav nav-tabs nav-fill mb-3" id="authTab" role="tablist">
@@ -186,7 +86,6 @@
                     <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#register">حساب جديد</button></li>
                 </ul>
                 <div class="tab-content">
-                    <!-- LOGIN -->
                     <div class="tab-pane fade show active" id="login">
                         <form id="loginForm">
                             <div class="mb-3">
@@ -201,7 +100,6 @@
                             <button type="submit" class="btn btn-success-custom w-100">دخول</button>
                         </form>
                     </div>
-                    <!-- INSCRIPTION -->
                     <div class="tab-pane fade" id="register">
                         <form id="regForm">
                             <div class="mb-3">
@@ -211,7 +109,7 @@
                             <div class="mb-3">
                                 <label class="form-label">رقم الهاتف (المعرف الوحيد)</label>
                                 <input type="tel" id="r_phone" class="form-control" placeholder="2126... أو 06..." required>
-                                <div class="form-text text-warning small">⚠️ يجب أن يبدأ بـ 212 أو 0 (سيتم حفظه بصيغة 212)</div>
+                                <div class="form-text text-warning small">⚠️ يجب أن يبدأ بـ 212 أو 0</div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">كلمة المرور</label>
@@ -224,7 +122,6 @@
             </div>
         </div>
 
-        <!-- APP SECTION -->
         <div id="appSection" class="hidden">
             <div class="d-flex justify-content-between align-items-center mb-3 px-2">
                 <span class="badge bg-secondary fs-6 py-2">
@@ -234,12 +131,12 @@
                 <button onclick="logout()" class="btn btn-sm btn-outline-danger rounded-pill px-3"><i class="fas fa-sign-out-alt"></i> خروج</button>
             </div>
 
-            <!-- طلب رحلة بدل النشر -->
             <div id="postFormContainer" class="custom-card p-3 mb-4">
                 <h5 class="mb-3 text-success"><i class="fas fa-plus-circle"></i> طلب رحلة داخل مراكش</h5>
                 <form id="rideForm" class="row g-3">
                     <div class="col-6"><label class="form-label small">من أي حي؟</label><input type="text" id="fromCity" class="form-control" placeholder="مثال: جليز" required></div>
                     <div class="col-6"><label class="form-label small">إلى أي حي؟</label><input type="text" id="toCity" class="form-control" placeholder="مثال: المنارة" required></div>
+                    <div class="col-6"><label class="form-label small">التاريخ</label><input type="date" id="rideDate" class="form-control" required></div>
                     <div class="col-6"><label class="form-label small">التوقيت من</label><input type="time" id="timeFrom" class="form-control" required></div>
                     <div class="col-6"><label class="form-label small">إلى غاية</label><input type="time" id="timeTo" class="form-control" required></div>
                     <div class="col-12 mt-3"><button type="submit" class="btn btn-success-custom w-100">طلب الرحلة الآن</button></div>
@@ -261,26 +158,68 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxIVTPZpkHkNxahNlraEJqjBw5zINxdWnqfEfGQI9o-rsGlypqq1ZTZ9GwZH__apoyi/exec'; 
+        // =============================================
+        // CONFIGURATION
+        // =============================================
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxrbHrCDdkDa-BqyTMtggjzqPo8O2GEP32bEJdk8a573Kd3m136eI_Qg4NIVt-q6d139A/exec';
         
         let currentUser = null;
         let isAdminMode = false;
         let autoDeleteTimers = {};
+
+        // =============================================
+        // UNIFORM PHONE - توحيد رقم الهاتف
+        // =============================================
+        function uniformPhone(phone) {
+            if (!phone) return '';
+            let cleaned = String(phone).replace(/[\s\-\(\)]/g, '');
+            if (cleaned.startsWith('0')) {
+                cleaned = '212' + cleaned.substring(1);
+            }
+            if (cleaned.startsWith('212')) {
+                if (cleaned.length === 12) return cleaned;
+                while (cleaned.length < 12) cleaned += '0';
+                return cleaned;
+            }
+            if (cleaned.startsWith('6') || cleaned.startsWith('7')) {
+                return '212' + cleaned;
+            }
+            return cleaned;
+        }
+
+        // =============================================
+        // VALIDATE PHONE
+        // =============================================
+        function validatePhone(phone) {
+            const p = uniformPhone(phone);
+            return p.length === 12 && p.startsWith('212');
+        }
+
+        // =============================================
+        // INIT
+        // =============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('rideDate').value = today;
+        });
 
         if(sessionStorage.getItem('currentUser')) {
             currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
             showApp();
         }
 
-        function validatePhone(phone) {
-            const p = phone.trim();
-            return /^(212|0)[6-7][0-9]{8}$/.test(p);
-        }
-
+        // =============================================
+        // API POST
+        // =============================================
         async function apiPost(payload) {
             document.getElementById('loader').classList.remove('hidden');
             try {
-                await fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                await fetch(SCRIPT_URL, { 
+                    method: 'POST', 
+                    mode: 'no-cors', 
+                    headers: { 'Content-Type': 'application/json' }, 
+                    body: JSON.stringify(payload) 
+                });
                 return true;
             } catch (error) {
                 console.error(error);
@@ -291,9 +230,9 @@
             }
         }
 
-        // ==========================================
-        // INSCRIPTION
-        // ==========================================
+        // =============================================
+        // REGISTER
+        // =============================================
         document.getElementById('regForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const pseudo = document.getElementById('r_pseudo').value.trim();
@@ -301,11 +240,18 @@
             const pass = document.getElementById('r_pass').value;
 
             if (!validatePhone(phone)) {
-                Swal.fire('خطأ', 'صيغة الرقم غير صحيحة. أدخل رقماً يبدأ بـ 212 أو 0 (مثال: 212661234567)', 'error');
+                Swal.fire('خطأ', 'صيغة الرقم غير صحيحة. أدخل رقماً يبدأ بـ 212 أو 0 (مثال: 212661234567 أو 0612345678)', 'error');
                 return;
             }
 
-            await apiPost({ action: 'register', pseudo, phone, password: pass });
+            const formattedPhone = uniformPhone(phone);
+
+            await apiPost({ 
+                action: 'register', 
+                pseudo, 
+                phone: formattedPhone, 
+                password: pass 
+            });
             
             Swal.fire({
                 icon: 'info',
@@ -314,14 +260,14 @@
                 confirmButtonColor: '#2E7D32'
             }).then(() => {
                 new bootstrap.Tab(document.querySelector('#authTab button[data-bs-target="#login"]')).show();
-                document.getElementById('l_phone').value = phone;
+                document.getElementById('l_phone').value = formattedPhone;
                 document.getElementById('regForm').reset();
             });
         });
 
-        // ==========================================
-        // CONNEXION
-        // ==========================================
+        // =============================================
+        // LOGIN
+        // =============================================
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const phone = document.getElementById('l_phone').value.trim();
@@ -332,10 +278,12 @@
                 return;
             }
 
+            const formattedPhone = uniformPhone(phone);
+
             document.getElementById('loader').classList.remove('hidden');
             
             try {
-                const res = await fetch(`${SCRIPT_URL}?action=checkLogin&phone=${encodeURIComponent(phone)}&pass=${encodeURIComponent(pass)}`);
+                const res = await fetch(`${SCRIPT_URL}?action=checkLogin&phone=${encodeURIComponent(formattedPhone)}&pass=${encodeURIComponent(pass)}`);
                 const data = await res.json();
                 
                 if (data.valid && data.user) {
@@ -344,7 +292,12 @@
                     showApp();
                     Swal.fire({ icon: 'success', title: `مرحباً ${currentUser.pseudo}!`, timer: 1500, showConfirmButton: false });
                 } else {
-                    Swal.fire({ icon: 'error', title: 'خطأ', text: data.message || 'رقم الهاتف أو كلمة المرور غير صحيحة', confirmButtonColor: '#d33' });
+                    Swal.fire({ 
+                        icon: 'error', 
+                        title: 'خطأ في تسجيل الدخول', 
+                        text: data.message || 'رقم الهاتف أو كلمة المرور غير صحيحة',
+                        confirmButtonColor: '#d33'
+                    });
                 }
             } catch (err) {
                 console.error(err);
@@ -354,10 +307,12 @@
             }
         });
 
+        // =============================================
+        // LOGOUT
+        // =============================================
         function logout() {
             sessionStorage.removeItem('currentUser');
             isAdminMode = false;
-            // Clear auto-delete timers
             Object.keys(autoDeleteTimers).forEach(key => {
                 clearTimeout(autoDeleteTimers[key]);
             });
@@ -365,6 +320,9 @@
             location.reload();
         }
 
+        // =============================================
+        // SHOW APP
+        // =============================================
         function showApp() {
             document.getElementById('authSection').classList.add('hidden');
             document.getElementById('appSection').classList.remove('hidden');
@@ -373,129 +331,100 @@
             loadRides();
         }
 
-        // ==========================================
-        // ✅ FORMAT TIME
-        // ==========================================
+        // =============================================
+        // FORMAT TIME
+        // =============================================
         function formatTime(timeValue) {
             if (!timeValue) return '--:--';
-            
             if (typeof timeValue === 'string' && /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/.test(timeValue)) {
                 return timeValue;
             }
-            
-            if (timeValue instanceof Date && !isNaN(timeValue)) {
-                const h = timeValue.getHours().toString().padStart(2, '0');
-                const m = timeValue.getMinutes().toString().padStart(2, '0');
-                return `${h}:${m}`;
-            }
-            
-            if (typeof timeValue === 'number') {
-                if (timeValue < 100000) {
-                    const totalMinutes = Math.round(timeValue * 24 * 60);
-                    const hours = Math.floor(totalMinutes / 60) % 24;
-                    const minutes = totalMinutes % 60;
-                    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
-                }
-                const date = new Date(timeValue);
-                if (!isNaN(date)) {
-                    const h = date.getHours().toString().padStart(2, '0');
-                    const m = date.getMinutes().toString().padStart(2, '0');
-                    return `${h}:${m}`;
-                }
-            }
-            
-            if (typeof timeValue === 'string') {
-                const date = new Date(timeValue);
-                if (!isNaN(date)) {
-                    const h = date.getHours().toString().padStart(2, '0');
-                    const m = date.getMinutes().toString().padStart(2, '0');
-                    return `${h}:${m}`;
-                }
-                const timeMatch = timeValue.match(/([0-1]?[0-9]|2[0-3]):[0-5][0-9]/);
-                if (timeMatch) {
-                    return timeMatch[0];
-                }
-            }
-            
-            if (typeof timeValue === 'object' && timeValue !== null) {
-                if ('hours' in timeValue && 'minutes' in timeValue) {
-                    const h = timeValue.hours.toString().padStart(2, '0');
-                    const m = timeValue.minutes.toString().padStart(2, '0');
-                    return `${h}:${m}`;
-                }
-                if ('hour' in timeValue && 'minute' in timeValue) {
-                    const h = timeValue.hour.toString().padStart(2, '0');
-                    const m = timeValue.minute.toString().padStart(2, '0');
-                    return `${h}:${m}`;
-                }
-            }
-            
             const str = String(timeValue);
-            const fallbackMatch = str.match(/([0-1]?[0-9]|2[0-3]):[0-5][0-9]/);
-            if (fallbackMatch) {
-                return fallbackMatch[0];
-            }
-            
-            console.warn('Could not format time:', timeValue);
-            return '--:--';
+            const match = str.match(/([0-1]?[0-9]|2[0-3]):[0-5][0-9]/);
+            return match ? match[0] : '--:--';
         }
 
-        // ==========================================
-        // ✅ GET TIME IN MINUTES
-        // ==========================================
-        function getTimeInMinutes(timeValue) {
-            if (!timeValue) return 0;
-            
-            if (typeof timeValue === 'string' && /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/.test(timeValue)) {
-                const parts = timeValue.split(':');
-                return parseInt(parts[0]) * 60 + parseInt(parts[1]);
-            }
-            
-            if (timeValue instanceof Date && !isNaN(timeValue)) {
-                return timeValue.getHours() * 60 + timeValue.getMinutes();
-            }
-            
-            if (typeof timeValue === 'number' && timeValue < 100000) {
-                const totalMinutes = Math.round(timeValue * 24 * 60);
-                return totalMinutes;
-            }
-            
-            if (typeof timeValue === 'string') {
-                const date = new Date(timeValue);
-                if (!isNaN(date)) {
-                    return date.getHours() * 60 + date.getMinutes();
+        // =============================================
+        // GET TIME IN MINUTES
+        // =============================================
+        function getDateTimeInMinutes(dateStr, timeStr) {
+            if (!dateStr || !timeStr) return 0;
+            try {
+                const dateObj = new Date(dateStr + 'T' + timeStr);
+                if (!isNaN(dateObj)) {
+                    return dateObj.getHours() * 60 + dateObj.getMinutes();
                 }
-                const timeMatch = timeValue.match(/([0-1]?[0-9]|2[0-3]):[0-5][0-9]/);
-                if (timeMatch) {
-                    const parts = timeMatch[0].split(':');
-                    return parseInt(parts[0]) * 60 + parseInt(parts[1]);
-                }
-            }
-            
+            } catch (e) {}
             return 0;
         }
 
-        // ==========================================
-        // ✅ CHECK IF RIDE SHOULD BE AUTO-DELETED
-        // ==========================================
-        function shouldAutoDeleteRide(timeTo) {
-            if (!timeTo) return false;
-            
-            const now = new Date();
-            const currentMinutes = now.getHours() * 60 + now.getMinutes();
-            const targetMinutes = getTimeInMinutes(timeTo);
-            
-            // If current time is past the target time + 30 minutes
-            return currentMinutes > (targetMinutes + 30);
+        // =============================================
+        // CHECK EXPIRED
+        // =============================================
+        function isRideExpired(rideDate, timeTo) {
+            if (!rideDate || !timeTo) return false;
+            try {
+                const rideEnd = new Date(rideDate + 'T' + timeTo);
+                if (isNaN(rideEnd)) return false;
+                const now = new Date();
+                const gracePeriod = new Date(rideEnd.getTime() + 30 * 60 * 1000);
+                return now > gracePeriod;
+            } catch (e) {
+                return false;
+            }
         }
 
-        // ==========================================
-        // ✅ COMPLETE RIDE (set completed status)
-        // ==========================================
+        // =============================================
+        // CHECK COMPLETED
+        // =============================================
+        function isRideCompleted(ride) {
+            return ride && ride.status === 'completed';
+        }
+
+        // =============================================
+        // SCHEDULE AUTO-DELETE
+        // =============================================
+        function scheduleAutoDelete(id, rideDate, timeTo) {
+            if (autoDeleteTimers[id]) {
+                clearTimeout(autoDeleteTimers[id]);
+                delete autoDeleteTimers[id];
+            }
+            
+            try {
+                const rideEnd = new Date(rideDate + 'T' + timeTo);
+                if (isNaN(rideEnd)) return;
+                
+                const deleteTime = new Date(rideEnd.getTime() + 30 * 60 * 1000);
+                const now = new Date();
+                let delayMs = deleteTime.getTime() - now.getTime();
+                
+                if (delayMs < 0) delayMs += 24 * 60 * 60 * 1000;
+                if (delayMs > 24 * 60 * 60 * 1000) delayMs = 24 * 60 * 60 * 1000;
+                
+                autoDeleteTimers[id] = setTimeout(async () => {
+                    try {
+                        const res = await fetch(SCRIPT_URL);
+                        const data = await res.json();
+                        if (data.status === 'success') {
+                            const ride = data.rides.find(r => r.id === id);
+                            if (ride && ride.status !== 'completed' && isRideExpired(ride.date, ride.timeTo)) {
+                                await deleteRide(id, true);
+                            }
+                        }
+                    } catch (err) {
+                        console.error('Auto-delete error:', err);
+                    }
+                }, delayMs);
+            } catch (e) {}
+        }
+
+        // =============================================
+        // COMPLETE RIDE
+        // =============================================
         async function completeRide(id) {
             const confirm = await Swal.fire({
                 title: 'هل تمت الرحلة؟',
-                text: 'سيتم وضع علامة على هذه الرحلة كمكتملة وسيتم تعطيل أزرار الاتصال.',
+                text: 'سيتم وضع علامة على هذه الرحلة كمكتملة',
                 icon: 'question',
                 showCancelButton: true,
                 confirmButtonColor: '#ff8f00',
@@ -505,12 +434,7 @@
             });
             
             if(confirm.isConfirmed) {
-                // Store completed status in a local array
-                if (!window.completedRides) window.completedRides = [];
-                if (!window.completedRides.includes(id)) {
-                    window.completedRides.push(id);
-                }
-                // Clear auto-delete timer for this ride
+                await apiPost({ action: 'completeRide', id: id });
                 if (autoDeleteTimers[id]) {
                     clearTimeout(autoDeleteTimers[id]);
                     delete autoDeleteTimers[id];
@@ -526,14 +450,9 @@
             }
         }
 
-        // Check if ride is completed
-        function isRideCompleted(id) {
-            return window.completedRides && window.completedRides.includes(id);
-        }
-
-        // ==========================================
-        // ✅ DELETE RIDE (with auto-delete support)
-        // ==========================================
+        // =============================================
+        // DELETE RIDE
+        // =============================================
         async function deleteRide(id, autoDelete = false) {
             if (!autoDelete) {
                 const msg = isAdminMode ? "هل أنت متأكد من حذف هذا الطلب كمسؤول؟" : "هل أنت متأكد من حذف طلبك؟";
@@ -547,11 +466,9 @@
                     confirmButtonText: 'نعم، احذفه', 
                     cancelButtonText: 'إلغاء' 
                 });
-                
                 if(!confirm.isConfirmed) return;
             }
             
-            // Clear auto-delete timer
             if (autoDeleteTimers[id]) {
                 clearTimeout(autoDeleteTimers[id]);
                 delete autoDeleteTimers[id];
@@ -564,72 +481,9 @@
             }
         }
 
-        // ==========================================
-        // ✅ SCHEDULE AUTO-DELETE
-        // ==========================================
-        function scheduleAutoDelete(id, timeTo) {
-            // Clear existing timer
-            if (autoDeleteTimers[id]) {
-                clearTimeout(autoDeleteTimers[id]);
-                delete autoDeleteTimers[id];
-            }
-            
-            const now = new Date();
-            const currentMinutes = now.getHours() * 60 + now.getMinutes();
-            const targetMinutes = getTimeInMinutes(timeTo);
-            
-            // Calculate delay until target time + 30 minutes
-            let delayMinutes = (targetMinutes + 30) - currentMinutes;
-            
-            // If delay is negative (already past), schedule for next day
-            if (delayMinutes < 0) {
-                delayMinutes += 1440; // Add 24 hours
-            }
-            
-            // If delay is more than 24 hours, cap it (should not happen)
-            if (delayMinutes > 1440) {
-                delayMinutes = delayMinutes % 1440;
-            }
-            
-            // Convert to milliseconds and add small buffer
-            const delayMs = (delayMinutes * 60 * 1000) + 5000; // 5 seconds buffer
-            
-            console.log(`Scheduling auto-delete for ride ${id} in ${Math.round(delayMinutes)} minutes (at ${timeTo} + 30min)`);
-            
-            autoDeleteTimers[id] = setTimeout(async () => {
-                // Check if ride still exists and is not completed
-                try {
-                    const res = await fetch(SCRIPT_URL);
-                    const data = await res.json();
-                    if (data.status === 'success') {
-                        const ride = data.rides.find(r => r.id === id);
-                        if (ride && !isRideCompleted(id)) {
-                            console.log(`Auto-deleting ride ${id} (expired + 30min)`);
-                            await deleteRide(id, true);
-                        }
-                    }
-                } catch (err) {
-                    console.error('Auto-delete error:', err);
-                }
-            }, delayMs);
-        }
-
-        // ==========================================
-        // ✅ CHECK EXPIRED (without auto-delete logic)
-        // ==========================================
-        function isRideExpired(timeTo) {
-            if (!timeTo) return false;
-            
-            const now = new Date();
-            const currentMinutes = now.getHours() * 60 + now.getMinutes();
-            const targetMinutes = getTimeInMinutes(timeTo);
-            
-            return currentMinutes > targetMinutes;
-        }
-
-        // ==========================================
-        // ✅ عرض الرحلات المطلوبة - ACTIVE on TOP, EXPIRED on BOTTOM
-        // ==========================================
+        // =============================================
+        // RENDER RIDES
+        // =============================================
         function renderRides(rides) {
             const container = document.getElementById('ridesList');
             document.getElementById('ridesCount').innerText = rides.length;
@@ -637,7 +491,6 @@
 
             if(rides.length === 0) {
                 container.innerHTML = `<div class="text-center p-5 text-muted"><i class="fas fa-taxi fa-3x mb-3 opacity-25"></i><p>لا توجد طلبات رحلات حالياً</p></div>`;
-                // Clear all timers
                 Object.keys(autoDeleteTimers).forEach(key => {
                     clearTimeout(autoDeleteTimers[key]);
                 });
@@ -645,7 +498,6 @@
                 return;
             }
 
-            // Clean up timers for rides that no longer exist
             const existingIds = rides.map(r => r.id);
             Object.keys(autoDeleteTimers).forEach(key => {
                 if (!existingIds.includes(parseInt(key))) {
@@ -654,42 +506,31 @@
                 }
             });
 
-            // 📊 SPLIT RIDES: Active vs Expired/Completed
             const activeRides = [];
             const expiredRides = [];
 
             rides.forEach(r => {
-                const completed = isRideCompleted(r.id);
-                const expired = !completed && isRideExpired(r.timeTo);
+                const completed = isRideCompleted(r);
+                const expired = !completed && isRideExpired(r.date, r.timeTo);
                 
                 if (completed || expired) {
                     expiredRides.push(r);
                 } else {
                     activeRides.push(r);
-                    // Schedule auto-delete for active rides
                     if (!autoDeleteTimers[r.id]) {
-                        scheduleAutoDelete(r.id, r.timeTo);
+                        scheduleAutoDelete(r.id, r.date, r.timeTo);
                     }
                 }
             });
 
-            // Sort active rides by timeFrom (earlier first)
             activeRides.sort((a, b) => {
-                const aTime = getTimeInMinutes(a.timeFrom);
-                const bTime = getTimeInMinutes(b.timeFrom);
-                return aTime - bTime;
+                return getDateTimeInMinutes(a.date, a.timeFrom) - getDateTimeInMinutes(b.date, b.timeFrom);
             });
 
-            // Sort expired rides by timeTo (later first)
             expiredRides.sort((a, b) => {
-                const aTime = getTimeInMinutes(a.timeTo);
-                const bTime = getTimeInMinutes(b.timeTo);
-                return bTime - aTime;
+                return getDateTimeInMinutes(b.date, b.timeTo) - getDateTimeInMinutes(a.date, a.timeTo);
             });
 
-            // ==========================================
-            // RENDER ACTIVE RIDES (TOP)
-            // ==========================================
             if (activeRides.length > 0) {
                 container.innerHTML += `
                     <div class="section-header">
@@ -697,15 +538,11 @@
                         <span class="badge bg-success">${activeRides.length}</span>
                     </div>
                 `;
-
                 activeRides.forEach(r => {
                     container.innerHTML += createRideCard(r, false);
                 });
             }
 
-            // ==========================================
-            // RENDER EXPIRED RIDES (BOTTOM)
-            // ==========================================
             if (expiredRides.length > 0) {
                 container.innerHTML += `
                     <hr class="section-divider">
@@ -714,19 +551,15 @@
                         <span class="badge bg-danger">${expiredRides.length}</span>
                     </div>
                 `;
-
                 expiredRides.forEach(r => {
                     container.innerHTML += createRideCard(r, true);
                 });
             }
-
-            // Update total count
-            document.getElementById('ridesCount').innerText = rides.length;
         }
 
-        // ==========================================
-        // ✅ CREATE RIDE CARD
-        // ==========================================
+        // =============================================
+        // CREATE RIDE CARD
+        // =============================================
         function createRideCard(r, isExpiredOrCompleted) {
             const isOwner = currentUser && currentUser.pseudo === r.owner;
             const phoneStr = String(r.phone || '');
@@ -735,11 +568,19 @@
             const tFrom = formatTime(r.timeFrom);
             const tTo = formatTime(r.timeTo);
             
-            // Check status
-            const completed = isRideCompleted(r.id);
-            const expired = !completed && isRideExpired(r.timeTo);
+            let displayDate = '';
+            if (r.date) {
+                try {
+                    const d = new Date(r.date);
+                    if (!isNaN(d)) {
+                        displayDate = d.toLocaleDateString('ar-MA', { weekday: 'short', day: 'numeric', month: 'short' });
+                    }
+                } catch(e) {}
+            }
             
-            // Determine status class and badge
+            const completed = isRideCompleted(r);
+            const expired = !completed && isRideExpired(r.date, r.timeTo);
+            
             let statusClass = '';
             let statusBadge = '';
             let buttonsDisabled = false;
@@ -757,7 +598,6 @@
                 completeDisabled = false;
             }
             
-            // Delete button
             let deleteBtnHtml = '';
             if (isOwner) {
                 deleteBtnHtml = `<div class="mt-2 text-start"><button onclick="deleteRide(${r.id})" class="btn btn-sm btn-outline-danger rounded-pill px-3"><i class="fas fa-trash-alt"></i> حذف طلبي</button></div>`;
@@ -765,7 +605,6 @@
                 deleteBtnHtml = `<button onclick="deleteRide(${r.id})" class="admin-delete-btn"><i class="fas fa-skull-crossbones"></i> حذف كمسؤول</button>`;
             }
 
-            // Complete button (only for owner or admin, and not completed)
             let completeBtnHtml = '';
             if ((isOwner || isAdminMode) && !completeDisabled) {
                 completeBtnHtml = `
@@ -775,28 +614,21 @@
                 `;
             }
 
-            // For admin, show complete button even if not owner
-            if (isAdminMode && !completeDisabled && !isOwner) {
-                completeBtnHtml = `
-                    <button onclick="completeRide(${r.id})" class="contact-btn btn-complete" title="إنهاء الرحلة (مسؤول)">
-                        <i class="fas fa-flag-checkered"></i>
-                    </button>
-                `;
-            }
-
-            // Delete timer info (only for active rides)
             let timerInfo = '';
-            if (!completed && !expired) {
-                const targetMinutes = getTimeInMinutes(r.timeTo);
-                const now = new Date();
-                const currentMinutes = now.getHours() * 60 + now.getMinutes();
-                let remaining = (targetMinutes + 30) - currentMinutes;
-                if (remaining < 0) remaining += 1440;
-                if (remaining > 0 && remaining < 1440) {
-                    const hours = Math.floor(remaining / 60);
-                    const minutes = Math.round(remaining % 60);
-                    timerInfo = `<span class="delete-timer"><i class="fas fa-clock"></i> سيتم الحذف تلقائياً بعد ${hours > 0 ? hours + 'h ' : ''}${minutes} دقيقة</span>`;
-                }
+            if (!completed && !expired && r.date && r.timeTo) {
+                try {
+                    const rideEnd = new Date(r.date + 'T' + r.timeTo);
+                    if (!isNaN(rideEnd)) {
+                        const deleteTime = new Date(rideEnd.getTime() + 30 * 60 * 1000);
+                        const now = new Date();
+                        let remaining = deleteTime.getTime() - now.getTime();
+                        if (remaining > 0 && remaining < 24 * 60 * 60 * 1000) {
+                            const hours = Math.floor(remaining / (60 * 60 * 1000));
+                            const minutes = Math.round((remaining % (60 * 60 * 1000)) / (60 * 1000));
+                            timerInfo = `<span class="delete-timer"><i class="fas fa-clock"></i> سيتم الحذف تلقائياً بعد ${hours > 0 ? hours + 'h ' : ''}${minutes} دقيقة</span>`;
+                        }
+                    }
+                } catch(e) {}
             }
 
             return `
@@ -812,7 +644,10 @@
                                 <span class="req-badge"><i class="fas fa-hand-paper"></i> طلب</span>
                                 ${statusBadge}
                             </div>
-                            <div class="time-badge"><i class="far fa-clock"></i> بين ${tFrom} و ${tTo}</div>
+                            <div>
+                                <span class="time-badge"><i class="far fa-clock"></i> بين ${tFrom} و ${tTo}</span>
+                                ${displayDate ? `<span class="date-badge"><i class="far fa-calendar-alt"></i> ${displayDate}</span>` : ''}
+                            </div>
                             <div class="small mt-2 text-white-50"><i class="fas fa-user-circle"></i> ${r.owner}</div>
                             ${timerInfo}
                         </div>
@@ -833,12 +668,14 @@
             `;
         }
 
+        // =============================================
+        // LOAD RIDES
+        // =============================================
         async function loadRides() {
             document.getElementById('loader').classList.remove('hidden');
             try {
                 const res = await fetch(SCRIPT_URL);
                 const data = await res.json();
-                
                 if(data.status === 'success') {
                     renderRides(data.rides || []);
                 } else {
@@ -852,9 +689,9 @@
             }
         }
 
-        // ==========================================
-        // إرسال طلب رحلة
-        // ==========================================
+        // =============================================
+        // ADD RIDE
+        // =============================================
         document.getElementById('rideForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             if(!currentUser) return Swal.fire('خطأ', 'يرجى إعادة تسجيل الدخول', 'error');
@@ -865,16 +702,33 @@
                 phone: currentUser.phone,
                 from: document.getElementById('fromCity').value.trim(),
                 to: document.getElementById('toCity').value.trim(),
+                date: document.getElementById('rideDate').value,
                 timeFrom: document.getElementById('timeFrom').value,
-                timeTo: document.getElementById('timeTo').value
+                timeTo: document.getElementById('timeTo').value,
+                status: 'active'
             };
+
+            if (ride.timeFrom >= ride.timeTo) {
+                Swal.fire('خطأ', 'يجب أن يكون وقت البدء قبل وقت الانتهاء', 'error');
+                return;
+            }
+
+            const today = new Date().toISOString().split('T')[0];
+            if (ride.date < today) {
+                Swal.fire('خطأ', 'لا يمكنك طلب رحلة في تاريخ مضى', 'error');
+                return;
+            }
 
             await apiPost(ride);
             e.target.reset();
+            document.getElementById('rideDate').value = today;
             Swal.fire({ toast:true, position:'top-end', icon:'success', title:'تم طلب الرحلة', showConfirmButton:false, timer:1500 });
             loadRides();
         });
 
+        // =============================================
+        // ADMIN MODE
+        // =============================================
         function toggleAdminMode() {
             if(isAdminMode) {
                 isAdminMode = false;
@@ -914,7 +768,9 @@
             }
         }
 
-        // Cleanup timers on page unload
+        // =============================================
+        // CLEANUP TIMERS
+        // =============================================
         window.addEventListener('beforeunload', function() {
             Object.keys(autoDeleteTimers).forEach(key => {
                 clearTimeout(autoDeleteTimers[key]);
